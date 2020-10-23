@@ -90,7 +90,6 @@ resource "aws_cloudwatch_metric_alarm" "alarm" {
 
   alarm_description   = var.alarm_description
   alarm_name          = var.alarm_count > 1 ? format("%v-%03d", local.alarm_name, count.index + 1) : local.alarm_name
-  alarm_actions       = [var.alarm_actions]
   comparison_operator = var.comparison_operator
   datapoints_to_alarm = var.datapoints_to_alarm
   dimensions          = var.dimensions[count.index]
