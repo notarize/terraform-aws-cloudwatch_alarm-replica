@@ -16,12 +16,6 @@ variable "datapoints_to_alarm" {
   default     = 5
 }
 
-variable "alarm_actions" {
-  description = "The arn for alarm action"
-  type        = string
-  default     = ""
-}
-
 variable "alarm_name" {
   description = " The descriptive name for the alarm. This name must be unique within the user's AWS account. [**Deprecated** in favor of `name`]. It will be removed in future releases. `name` supercedes the `alarm_name`. Either `name` or `alarm_name` **must** contain a non-default value."
   type        = string
