@@ -7,19 +7,19 @@ variable "alarm_count" {
 variable "alarm_description" {
   description = "The description for the alarm."
   type        = string
-  default     = ""
+  default     = "Alarm if WriteIOPs > 400 for 5 minutes"
 }
 
 variable "datapoints_to_alarm" {
   description = "The datapoints for the alarm."
   type        = string
-  default     = 15
+  default     = 5
 }
 
 variable "alarm_actions" {
   description = "The arn for alarm action"
   type        = string
-  default     = "arn:aws:sns:us-east-1:241176755253:production-monitoring-notification"
+  default     = ""
 }
 
 variable "alarm_name" {
