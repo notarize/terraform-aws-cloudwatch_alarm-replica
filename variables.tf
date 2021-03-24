@@ -13,7 +13,7 @@ variable "alarm_description" {
 variable "datapoints_to_alarm" {
   description = "The datapoints for the alarm."
   type        = string
-  default     = 0
+  default     = 5
 }
 
 variable "alarm_name" {
